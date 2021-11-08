@@ -1,4 +1,4 @@
-package com.sajib.leetcodejava.tried;
+package com.sajib.leetcodejava.accepted;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

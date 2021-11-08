@@ -1,14 +1,14 @@
-package com.sajib.leetcodejava;
+package com.sajib.leetcodejava.accepted;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
-public class CombinationSum40 {
+public class MinimumScoreTriangularization139 {
 
-    static List<List<Integer>> resultedList = new ArrayList<List<Integer>>();
+   // static List<List<Integer>> resultedList = new ArrayList<List<Integer>>();
+
+    int result = 0;
 
     static void printList(List<Integer> list){
         for (int item: list) {
@@ -25,7 +25,7 @@ public class CombinationSum40 {
         if(index>= nums.length){
             if(sum == target) {
                 //printList(result);
-                resultedList.add(result);
+               // resultedList.add(result);
             }
             return;
         }
@@ -43,7 +43,6 @@ public class CombinationSum40 {
                 break;
             }
         }
-
         generateCombinationSum(result,nextUniqItemIndex,nums,target,sum);
     }
 
@@ -53,10 +52,3 @@ public class CombinationSum40 {
         generateCombinationSum(new ArrayList<Integer>(),0,input,3,0);
     }
 }
-
-//main chanlange:
-//1. find all combination which is equal to target.class
-//    done by subset generation
-//2. Remove duplicate combination
-//    done by skiping same value for right side
-

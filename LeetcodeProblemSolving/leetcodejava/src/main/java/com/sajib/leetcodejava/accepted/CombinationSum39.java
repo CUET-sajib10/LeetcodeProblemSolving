@@ -1,4 +1,4 @@
-package com.sajib.leetcodejava;
+package com.sajib.leetcodejava.accepted;
 
 import java.util.ArrayList;
 import java.util.List;
